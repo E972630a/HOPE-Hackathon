@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sign Up</title>
+</head>
+
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="./photos/logo2.png" alt="picture of logo"></a>
+        <nav>
+            <ul class="mixer-nav">
+                <li><a class="current" href="index.html">Home</a> </li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="suHero">
+        <h2>Create an Account</h2>
+        <h3>Become apart of our community.</h3>
+    </div>
+    <div class="suGrid">
+        <div class="suFormcontainer">
+            <form action="/match" class="signUp" method="POST">
+                <fieldset>
+                    <legend>Student Info</legend>
+                    <ul>
+                        <li>
+                            <label>Your Name</label>
+                            <input name="firstName" type="text" id="firstName" placeholder="First Name" required>
+
+                            <input name="lastName" type="text" id="lastName" placeholder="Last Name" required>
+                        </li>
+                        <li>
+                            <label>Email</label>
+                            <input type="text" id="email" placeholder="Email" required>
+                        </li>
+                        <li>
+                            <label>What Are You Looking For?</label>
+                            <input type="radio" name="looking" value="Mentor"> Mentor
+                            <input type="radio" name="looking" value="Tutor"> Tutor
+                            <!-- <input type="radio" name="looking" value="Both"> Both --> <!-- future potential -->
+                        </li>
+                        <li>
+                            <label>Career Interest</label>
+                            <select name="interest" id="careerList" class="selectCss">
+                                <option value="Tech">Tech</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Arts">Arts</option>
+                                <option value="Finance">Finance</option>
+                                <option value="Law">Law</option>
+                            </select>
+                        </li>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Info</legend>
+                    <li>
+                        <label>Mile Radius:</label>
+                        <input type="radio" name="distance" value="10"> Less Than 10 miles
+                        <input type="radio" name="distance" value="20"> Less Than 20 miles
+                        <input type="radio" name="distance" value="50"> Less Than 50 miles
+                    </li>
+                    <li>
+                        <label>Preferred Language</label>
+                        <select name="language" id="languageList" class="selectCss">
+                            <option value="english">English</option>
+                            <option value="spanish">Spanish</option>
+                            <option value="french">French</option>
+                            <option value="mandarin">Mandarin</option>
+                            <option value="portuguese">Portuguese</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="russian">Russian</option>
+                        </select>
+                    </li>
+                    <article class="buttons">
+                        <button id="submitBtn"> Create Profile </button>
+
+                        <input id="cancelBtn" type="submit" value="Cancel">
+                    </article>
+                    </ul>
+
+                </fieldset>
+            </form>
+        </div>
+        <article>
+            <div class="photo">
+                <div class="imgIcon"><img src="./photos/ImagePlaceholder.png" alt="image placeholder"></a></div>
+            </div>
+            <input id="photoBtn" type="submit" value="upload photo">
+        </article>
+    </div>
+    
+    <footer>
+        <section class="footerContainer">
+            <div class="contactUs">
+                <h3>CONTACT US</h3>
+                <ul>
+                    <li>704-333-3333</li>
+                    <li>contact@mentormixer.com</li>
+                </ul>
+            </div>
+            <div class="socialMedia">
+                <H3>STAY CONNECTED</H3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" aria-label="Facebook"><i class="fa fa-facebook fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" aria-label="Twitter"><i class="fa fa-twitter fa-lg"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/" aria-label="Instagram"><i class="fa fa-instagram fa-lg"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="quickLinks">
+                <h3>QUICK LINKS</h3>
+                <ul>
+                    <li>About Us</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                    <li>FAQs</li>
+                    <li>For Mentees</li>
+                    <li>For Mentors / Tutors</li>
+                </ul>
+            </div>
+
+        </section>
+        <div class="copyright">
+            <p>© MENTOR MIXER</p>
+        </div>
+    </footer>
+</body>
+
+</html>
